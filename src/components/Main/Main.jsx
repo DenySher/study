@@ -1,9 +1,11 @@
-import Header from "../Header/Header";
+import Component1 from "../component1/Component1"
+import Modal from "../Modal/Modal"
 
 const Main = () => {
     return (
         <>
-        <Header />
+        <Component1 />
+        <Modal />
         </>
     )
 }
