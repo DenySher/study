@@ -2,23 +2,21 @@ import styles from './Modal.module.scss'
 
 
 const  Modal = ({ modal, close }) => {
-  
 
-  return (
-        
-        <div className={styles.containerModal} onClick={close}>
+  return ( 
+        <>
             {
                 modal ?
-            <div>
-                <p>HI</p>
+
+            <div className={styles.containerModal}>
+                <p>Modal</p>
                 <button onClick={close}>Close</button>
             </div>
 
             : null
             }
 
-        </div>
-        
+        </>  
   )
 }
 

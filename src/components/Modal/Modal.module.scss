@@ -1,6 +1,27 @@
 
 .containerModal {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    top: 300px;
     width: 300px;
     margin: auto;
-    background-color: aliceblue;
+    padding: 30px;
+    background-color: rgba(222, 221, 221, 0.35);
+    border-radius: 5px;
+    text-align: center;
+
+    p {
+        margin-bottom: 30px;
+    }
 }
+
+.containerModal {
+   
+    button {
+        width: 40%;
+        margin: auto;
+    }
+}
+

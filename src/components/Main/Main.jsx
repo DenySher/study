@@ -1,18 +1,21 @@
 import Modal from "../Modal/Modal"
+import styles from './Main.module.scss'
 import { useState } from "react"
 
 
 const Main = () => {
 
     const [modal, setModal] = useState(false)
-    const Toggle = () => setModal(!modal)  
+    const [modalValue, setmodalValue] = useState('')
 
+    const Toggle = () => {
+        setModal(!modal) 
+    }
+    
     return (
-        <div>
-            <button onClick={Toggle}>Modal
-                {/* {modal ? 'open' : 'close'} */}
-            </button>
-            <Modal modal={modal} close={Toggle}/>
+        <div className={styles.containerMain}>
+            <button onClick={Toggle}>MODAL WINDOW</button>
+            <Modal modal={modal} close={Toggle} setmodalValue={setmodalValue}/>
         </div>
     )
 }
