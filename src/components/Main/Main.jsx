@@ -3,23 +3,20 @@ import styles from './Main.module.scss'
 import { useState } from "react"
 
 
-const Main = () => {
+const Main = ({ dispatch }) => {
 
     const [modal, setModal] = useState(false)
-    const [modalValue, setmodalValue] = useState('')
 
-    const Toggle = () => {
+    const close = () => {
         setModal(!modal) 
     }
     
     return (
         <div className={styles.containerMain}>
-            <button onClick={Toggle}>MODAL WINDOW</button>
-            <Modal modal={modal} close={Toggle} setmodalValue={setmodalValue}/>
+            <button onClick={close}>MODAL WINDOW</button>
+            <Modal modal={modal} close={close} />
         </div>
     )
 }
-
-//https://dev.to/codebucks/how-to-create-an-efficient-modal-component-in-react-using-hooks-and-portals-360p
 
 export default Main
