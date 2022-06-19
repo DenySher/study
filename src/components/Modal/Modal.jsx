@@ -1,24 +1,14 @@
-import styles from './Modal.module.scss'
+import styles from "./Modal.module.scss";
 
+const Modal = ({ close }) => {
+  return (
+    <>
+      <div className={styles.containerModal}>
+        <p>Modal</p>
+        <button onClick={close}>Close</button>
+      </div>
+    </>
+  );
+};
 
-const  Modal = ({ modal, close }) => {
-
-  return ( 
-        <>
-            {
-                modal ?
-
-            <div className={styles.containerModal}>
-                <p>Modal</p>
-                <button onClick={close}>Close</button>
-            </div>
-
-            : null
-            }
-
-        </>  
-  )
-}
-
-
-export default Modal
+export default Modal;
