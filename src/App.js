@@ -1,22 +1,13 @@
-import './App.css';
-import styles from './index.module.scss'
-import Main from './components/Main/Main'
-import { useDispatch, useSelector } from 'react-redux'
+import "./App.css";
+import styles from "./index.module.scss";
+import Main from "./pages/Main/Main";
 
 
 function App() {
-
-  const dispatch = useDispatch()
-  const openModal = () => {
-    dispatch({
-      type: 'openModal'
-    })
-  }
-
   return (
-      <div className={styles.container}>
-        <Main dispatch={dispatch} />
-      </div>
+    <div className={styles.container}>
+      <Main />
+    </div>
   );
 }
 
