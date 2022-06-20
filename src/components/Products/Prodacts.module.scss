@@ -1,0 +1,20 @@
+.productCart {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin: auto;
+    background-color: rgb(231, 230, 230);
+    margin: 5px;
+
+    h3 {
+        margin-left: 10px;
+        padding: 5px;
+    }
+
+    button {
+        padding: 5px;
+        border: none;
+        background-color: rgb(156, 155, 155);
+        color: aliceblue;
+    }
+}

@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import { selectIsModalOpen } from "../../redux/selectors/modalSelectors";
-import { openModal, closeModal } from "../../redux/action/modalActions";
+import { openModal, closeModal } from "../../redux/actions/modalActions";
 import Modal from "../../components/Modal/Modal";
 import Products from "../../components/Products/Products";
 import styles from "./Main.module.scss";
@@ -19,8 +19,8 @@ const Main = () => {
 
   return (
     <div className={styles.containerMain}>
-      <button onClick={open}>Open modal</button>
-      {isModalOpen && <Modal close={close} />}
+      {/* <button onClick={open}>Open modal</button>
+      {isModalOpen && <Modal close={close} />} */}
       <Products />
     </div>
   );
