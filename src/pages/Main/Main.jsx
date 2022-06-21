@@ -19,8 +19,8 @@ const Main = () => {
 
   return (
     <div className={styles.containerMain}>
-      {/* <button onClick={open}>Open modal</button>
-      {isModalOpen && <Modal close={close} />} */}
+      <button className={styles.btnOpenModal} onClick={open}>Open modal</button>
+      {isModalOpen && <Modal close={close} />}
       <Products />
     </div>
   );

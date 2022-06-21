@@ -1,3 +1,7 @@
+.ContainerProductsCart {
+    display: flex;
+}
+
 .productCart {
     display: flex;
     justify-content: space-between;
@@ -17,4 +21,8 @@
         background-color: rgb(156, 155, 155);
         color: aliceblue;
     }
+}
+
+.cart {
+    width: 600px;
 }

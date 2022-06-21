@@ -5,7 +5,7 @@ const Modal = ({ close }) => {
     <>
       <div className={styles.containerModal}>
         <p>Modal</p>
-        <button onClick={close}>Close</button>
+        <button className={styles.btnCloseModal} onClick={close}>Close</button>
       </div>
     </>
   );

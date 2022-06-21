@@ -9,7 +9,7 @@ const initialState = {
     { name: "Macbook", id: "fdjas;fjads;lfjdals;" },
     { name: "Iphone", id: "213fdasfas;" },
     { name: "Ipad", id: "fd21fdlsa;" },
-    { name: "APple watch", id: "310jflds;" },
+    { name: "Apple watch", id: "310jflds;" },
     { name: "Air pods", id: "fdvml23;" },
   ],
   cartList: [],
@@ -30,6 +30,7 @@ const productsReducer = (state = initialState, action) => {
         ...state,
         cartList: newCartList,
       };
+
     case CLEAR_CART:
       return {
         ...state,
